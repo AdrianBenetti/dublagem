@@ -1,0 +1,780 @@
+<html>
+    <head>
+        <title> DUBLADORES </title>
+        <link rel="shortcut icon" href="dubladores.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel = "preconnect" href = "https://fonts.gstatic.com">
+		<link href = "https://fonts.googleapis.com/css2? family = Castoro: ital @ 0; 1 & display = swap "rel =" stylesheet ">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+	<style>
+	body {
+	  font-family: 'Lato', sans-serif;
+	  background-image: linear-gradient(to bottom, 	#E6E6FA, #87CEEB, #EF87BE)
+	}
+	
+	.left, .right {
+	  float: left;
+	  width: 20%; /* The width is 20%, by default */
+	}
+
+	.main {
+	  float: left;
+	  width: 60%; /* The width is 60%, by default */
+	}
+
+	/* Use a media query to add a breakpoint at 800px: */
+	@media screen and (max-width: 800px) {
+	  .left, .main, .right {
+		width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+	  }
+	}
+
+	img {
+	max-width: 100%;
+	}
+
+	p{
+	color: #000000;
+	font-size: 22px;
+	margin-left: 100px;
+	margin-right: 100px;
+	}
+	
+	.rodape{
+	color: #000000;
+	font-size: 18px;
+	margin-left: 100px;
+	margin-right: 100px;
+	}
+
+	.overlay {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: rgb(0,0,0);
+	  background-color: rgba(0,0,0, 0.9);
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	}
+
+	.overlay-content {
+	  position: relative;
+	  top: 25%;
+	  width: 100%;
+	  text-align: center;
+	  margin-top: 30px;
+	}
+
+	.overlay a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-size: 36px;
+	  color: #818181;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	.overlay a:hover, .overlay a:focus {
+	  color: #f1f1f1;
+	}
+
+	.overlay .closebtn {
+	  position: absolute;
+	  top: 20px;
+	  right: 45px;
+	  font-size: 60px;
+	}
+
+	@media screen and (max-height: 450px) {
+	  .overlay a {font-size: 20px}
+	  .overlay .closebtn {
+	  font-size: 40px;
+	  top: 15px;
+	  right: 35px;
+	  }
+	}
+	</style>
+	
+	<style type="text/css">
+
+        ul {
+        margin:0;
+        padding:0;
+        text-align: center;
+        list-style:none;
+		color: #000000;
+		font-size: 18px;		
+        }
+		
+        ul  li {
+        padding: 8px 5px;               
+        }
+
+        ul li:before {
+        content:url(http://www.un.org/en/oaj/unjs/efiling/added/images/bullet-list-icon-blue.jpg);;
+        }
+
+    </style>
+
+	<style>
+	* {box-sizing: border-box;}
+	body {font-family: Verdana, sans-serif;}
+	.mySlides {display: none;}
+	img {vertical-align: middle;}
+
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .text {font-size: 11px}
+	}
+	</style>
+	
+	<style>
+	a[href^="tel:"] {
+	  color: white;
+	  text-decoration: none;
+	  font-size: 25px;
+	}
+	</style>
+	
+	</head>
+	
+	<body>
+
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+				<div class="overlay-content">
+					<a href="dublagem.html"> VOLTAR A PÁGINA INICIAL </a><br>
+					<a href="series.html"> SÉRIES </a><br>
+					<a href="area_de_contato.php"> ÁREA DE CONTATO </a><br>
+				</div>
+		</div>
+
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776; Menu </span>
+
+	<script>
+	function openNav() {
+	  document.getElementById("myNav").style.width = "100%";
+	}
+
+	function closeNav() {
+	  document.getElementById("myNav").style.width = "0%";
+	}
+	</script>
+		
+		<br><br>
+		
+		<center><h1> Dubladores (as) Brasileiros (as) </h1></center>
+		
+		<br>
+		
+		<center><h2> Isabelle Cunha </h2></center>
+		
+		<br>
+		
+			<center><img src="isabelle.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p>Isabelle Cunha é uma dubladora do Rio De Janeiro, ela é uma dubladora incrível, talentosa e muito famosa, provavelmente você já ouviu falar dela ou já ouviu a voz dela. Isabelle dubla diversas séries e filmes, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Eleven - (Stranger Things);</li><br>
+				<li>- Tikki - (Miraculous: As Aventuras de Ladybug);</li><br>
+				<li>- Enola - (Enola Homes);</li><br>
+				<li>- Madison Russell - (Godzilla II);</li><br>
+				<li>- Chloe - (Champions Legion);</li><br>
+				<li>- Fuli - (A Guarda do Leão);</li><br>
+				<li>- Violet Baudelaire - (Desventuras em Série);</li><br>
+				<li>- Janet Hodgson - (Invocação do Mal 2);</li><br>
+				<li>- Rainha da Corte Seelie - (Shadowhunters).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Isabelle Cunha </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/isabelle__cunha/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+	
+		<center><h2> Guilherme Briggs </h2></center>
+		
+		<br>
+		
+			<center><img src="guilherme.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Guilherme Neves Briggs é um ator, dublador, diretor de dublagem, locutor, tradutor, desenhista, youtuber e blogueiro brasileiro do Rio De Janeiro. Guilherme Briggs dublou diversas séries e filmes, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Ross Geller - (Friends);</li><br>
+				<li>- Groxo - (X-Men: Evolution);</li><br>
+				<li>- Buzz Lightyear (Toy Story);</li><br>
+				<li>- Superman - (Liga da Justiça);</li><br>
+				<li>- Cosmo (Os Padrinhos Mágicos);</li><br>
+				<li>- Hawk Moth/Shadow Moth - (Miraculous: As Aventuras de Ladybug);</li><br>
+				<li>- Shaman (O Clube das Winx: World of Winx);</li><br>
+				<li>- Lord Viren (O Príncipe Dragão);</li><br>
+				<li>- Teddy (A Era do Gelo: O Big Bang).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Guilherme Briggs </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/guilhermebriggs/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Ana Helena De Freitas </h2></center>
+		
+		<br>
+		
+			<center><img src="ana.jpg" height="500" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p>Ana Helena De Freitas é uma dubladora, cantora e atriz do Rio De Janeiro, ela é uma ótima dubladora e muito famosa. Ana Helena dubla diversas séries e filmes, como : </p>
+		
+		<br>
+		
+		<ul>
+			<li>- Oeste - (Perdidos em Oz);</li><br>
+			<li>- Ani - (Next Gen);</li><br>
+			<li>- Sienna - (A Casa da Raven);</li><br>
+			<li>- Erica - (Stranger Things);</li><br>
+			<li>- Mirabelle Harris - (The Kicks);</li><br>
+			<li>- Hadley St. Germain - (Pretty Little Liars);</li><br>
+			<li>- Roberta Barrios - (Noobees);</li><br>
+			<li>- Isabella - (Transformers: O Último Cavaleiro);</li><br>
+			<li>- Nancy - (Annabelle 2: A criação do Mal).</li>
+		</ul>
+		
+		<br>
+		
+		<center><h3> Siga Ana Helena</h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/anahelena.defreitas/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+		
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Alexandre Drummond </h2></center>
+		
+		<br>
+		
+			<center><img src="alexandre.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Alexandre Drummond é um dublador e diretor de dublagem do Rio De Janeiro. Alexandre é neto do dublador Orlando Drummond. Alexandre é muito conhecido por suas dublagem como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Patch - (101 Dálmatas II);</li><br>
+				<li>- Tom Riddle (16 anos) - (Harry Potter);</li><br>
+				<li>- Jovem Scooby-Doo - (Scooby! O Filme);</li><br>
+				<li>- Timmy Turner - (Os Padrinhos Mágicos);</li><br>
+				<li>- Mogli - (Mogli: O Menino Lobo 2);</li><br>
+				<li>- Barry Allen/Flash - (The Flash);</li><br>
+				<li>- Shawn e Devin - (Drama Total);</li><br>
+				<li>- Alec Lightwood - (Shadowhunters);</li><br>
+				<li>- Sweet Pea - Riverdale.</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Alexandre Drummond </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/alexandredrummonddub/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Úrsula Bezerra </h2></center>
+		
+		<br>
+		
+			<center><img src="ursula.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Úrsula Luís Bezerra Da Silva é uma dubladora e diretora de dublagem de São Paulo. Úrsula Bezerra é muito conhecida por dubladar diversas séries, animes e filmes, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Goku (criança) - (Dragon Ball);</li><br>
+				<li>- Naruto Uzumaki - (Naruto);</li><br>
+				<li>- Kimba - (O leão branco);</li><br>
+				<li>- Totodile do Ash - (Pokémon);</li><br>
+				<li>- Twyla (A Filha do Bicho-Papão) - (Monster High);</li><br>
+				<li>- Bocão - (Kick Buttowski);</li><br>
+				<li>- Jirōmaru - (O Rapaz e o Monstro);</li><br>
+				<li>- Doki - (As Aventuras de Doki);</li><br>
+				<li>- Gnar - (League of Legends).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Úrsula Bezerra </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/u_bezerra/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+	
+			<center><h2> Charles Emmanuel </h2></center>
+		
+		<br>
+		
+			<center><img src="charles.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Charles Emmanuel De Barros Marcondes é um ator, dublador, youtuber e streamer brasileiro do Paraná. Charles Emmanuel é muito conhecido por dublar desenhos animados, filmes, novelas mexicanas e séries, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Rony Weasley - (Harry Potter);</li><br>
+				<li>- Ben Tennyson - (Ben 10);</li><br>
+				<li>- Rigby - (Apenas um Show);</li><br>
+				<li>- Mutano - (Jovens Titãs);</li><br>
+				<li>- Nate River (Near) - (Death Note);</li><br>
+				<li>- Gowther - (Nanatsu No Taizai - Sete pecados capitais);</li><br>
+				<li>- Eustáquio - (As Crônicas de Nárnia);</li><br>
+				<li>- Bolin - (Avatar: A Lenda de Korra);</li><br>
+				<li>- Tenma de Pégaso - (Cavaleiros do Zodíaco).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Charles Emmanuel </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/charles_weasley/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Luisa Palomanes </h2></center>
+		
+		<br>
+		
+		<center><img src="luisa.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Luisa Palomanes é uma atriz e dubladora do Rio De Janeiro. Luisa é muito conhecida por seus trabalhos de dublagem, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Tris - (Divergente);</li><br>
+				<li>- Mera - (Liga da Justiça e Aquaman);</li><br>
+				<li>- Hazel Grace Lancaster - (A Culpa é das Estrelas);</li><br>
+				<li>- Hermione Granger - (Harry Potter);</li><br>
+				<li>- Marília - (Esquadrão Bizarro - O Filme);</li><br>
+				<li>- Paulina "Lina" Zander - (Ouija: Origin of Evil);</li><br>
+				<li>- Iris West - (The Flash);</li><br>
+				<li>- Darcy Lewis - (Thor e Thor: O Mundo Sombrio);</li><br>
+				<li>- Princesa Merida - (Valente e WiFi Ralph).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Luisa Palomanes </h3></center>
+		
+		<br>
+		
+			<center><a href="https://www.instagram.com/luisapalomanes/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Fabrício Vila Verde </h2></center>
+		
+		<br>
+		
+			<center><img src="fabricio.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Fabrício Vila Verde é um ator, diretor de dublagem e dublador de Nova Iguaçu. Fabrício dubla diversos personagens de filmes e séries de televisão, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Adrien Agreste (Cat Noir) e Félix Graham de Vanily - (Miraculous: As Aventuras de Ladybug);</li><br>
+				<li>- Huguinho - (DuckTales: Os Caçadores de Aventuras);</li><br>
+				<li>- Phineas Flynn - (Phineas e Ferb);</li><br>
+				<li>- Meliodas - (Nanatsu no Taizai);</li><br>
+				<li>- Eco-Eco - (Ben 10);</li><br>
+				<li>- Ralph Dibny/Homem Elastico - (The Flash);</li><br>
+				<li>- Ken Utônio - (Meninas Superpoderosas: Geração Z);</li><br>
+				<li>- Asa Butterfield - (O Menino do Pijama Listrado);</li><br>
+				<li>- Benedict Clarke - (Harry Potter e as Relíquias da Morte: Parte 2).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Fabrício Vila Verde </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/fabricio.vilaverde/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Jéssica Vieira </h2></center>
+		
+		<br>
+		
+			<center><img src="jessica.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Jéssica Vieira de Araújo é uma atriz, dubladora e youtuber do Rio De Janeiro. Jéssica Vieira é muito famosa por suas dublagens, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Aimee Gibbs - (Sex Education);</li><br>
+				<li>- Aisha Robinson - (Cobra Kai);</li><br>
+				<li>- Alex - (The A List);</li><br>
+				<li>- Amora Linda - (Moranguinho: Aventuras em Tutti Frutti);</li><br>
+				<li>- Ashley - (The Thundermans);</li><br>
+				<li>- Charlotte Page - (Henry Danger);</li><br>
+				<li>- Ethel Mug - (Riverdale);</li><br>
+				<li>- Marinette Dupain-Cheng (Ladybug) - (Miraculous: As Aventuras de Ladybug);</li><br>
+				<li>- Rayla - (O Príncipe Dragão).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Jéssica Vieira </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/jessievieira/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Alexandre Moreno </h2></center>
+		
+		<br>
+		
+			<center><img src="alexandre_moreno.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Alexandre Alves Nascimento é um ator e dublador do Rio De Janeiro. Ganhou o Prêmio Yamato de Melhor ator 2002 no Segundo Festival de Cinema de Varginha com o filme "Uma Onda no Ar" de Helvécio Ratton, e o Prêmio CESGRANRIO DE TEATRO de melhor ator em musical na peça A Cuíca do Laurindo de Rodrigo Alzuguir com direção de Sidney Cruz. Alexandre dubla diversas séries e filmes, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Adam Sandler - (Todos os filmes de Adam);</li><br>
+				<li>- Pinky - (Pinky e o Cérebro);</li><br>
+				<li>- Ciclope - (X-Men Evolution);</li><br>
+				<li>- Kaká - (Johnny Bravo);</li><br>
+				<li>- Gato de Botas - (Shrek);</li><br>
+				<li>- Alex - (Madagascar);</li><br>
+				<li>- Buck - (A Era do Gelo);</li><br>
+				<li>- Drácula - (Hotel Transilvânia);</li><br>
+				<li>- Pernalonga - (Looney Tunes).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Alexandre Moreno </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/alexandremoreno9724/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Mariana Torres </h2></center>
+		
+		<br>
+		
+			<center><img src="mariana.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Mariana Torres é uma atriz, dubladora e diretora de dublagem do Rio De Janeiro. Mariana é conhecida por dar voz à atriz Raven-Symoné no seriado As Visões da Raven e em alguns de seus filmes. Com esse trabalho ganhou, em 2009, o prêmio de Melhor Dubladora de Protagonista, no Oscar da Dublagem. Mariana Torres dubla diversas séries e filmes, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Christine - (Champions Legion);</li><br>
+				<li>- Amy - (A Escolha Perfeita e A Escolha Perfeita 2);</li><br>
+				<li>- Carina - (Thor: O Mundo Sombrio e Guardiões da Galáxia);</li><br>
+				<li>- Katniss Everdeen - (Jogos Vorazes);</li><br>
+				<li>- Erica Reyes - (Teen Wolf);</li><br>
+				<li>- Raven Baxter - (As Visões da Raven);</li><br>
+				<li>- Cruella - (Cruella, filme de 2021);</li><br>
+				<li>- Wanda Maximoff - (Vingadores: Era de Ultron, Capitão América: Guerra Civil, Vingadores: Guerra Infinita, Vingadores: Ultimato e WandaVision);</li><br>
+				<li>- Dora - (Dora e seus Amigos da Cidade).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Mariana Torres </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/mariana_torres_dubladora/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Wesley Santana </h2></center>
+		
+		<br>
+		
+			<center><img src="wesley.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Wesley Santana é ator e dublador carioca. Wesley é conhecido por dublar diversas séries e filmes, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Joe Cassidy - (Calibre);</li><br>
+				<li>- Brad Ashten - (Outer Banks);</li><br>
+				<li>- Loki - (Loki);</li><br>
+				<li>- Hassard - (Kengan Ashura);</li><br>
+				<li>- Rafael del Villar - (Amanhã é Para sempre);</li><br>
+				<li>- Jorge Poza - (Cachito do Céu);</li><br>
+				<li>- Manuel Balbi - (O Último Dragão);</li><br>
+				<li>- Óscar Rodo - (Noobees);</li><br>
+				<li>- Suguru Getou - (Jujutsu Kaisen).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Wesley Santana </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/owesleysantana/"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Carla Martelli </h2></center>
+		
+		<br>
+		
+			<center><img src="carla.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Carla Martelli é uma atriz, dubladora e diretora de dublagem de São Paulo. Carla é atuante principalmente nas regiões de Campinas e São Paulo. Um de seus papeis de maior destaque é a personagem Tóquio, do seriado espanhol La Casa de Papel. Carla é conhecida por dublar várias séries e filmes, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Bee - (A Babá);</li><br>
+				<li>- Amaia - (O Guardião Invisível);</li><br>
+				<li>- Tóquio - (La Casa de Papel);</li><br>
+				<li>- Jessica - (Rick & Morty);</li><br>
+				<li>- Sanakan - (Blame);</li><br>
+				<li>- Kristina Kuroda - (Beyblade Burst: Evolution);</li><br>
+				<li>- Elizabeth - (Quando chama o coração);</li><br>
+				<li>- Ruth Wilder - (Glow);</li><br>
+				<li>- Sypha Belnades - (Castlevania).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Carla Martelli </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/_carlamartelli_/"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+		
+		<hr color="black">
+		
+		<br>
+		
+		<center><h2> Alfredo Rollo </h2></center>
+		
+		<br>
+		
+			<center><img src="alfredo.jpg" height="300" width="500" style="max-width:100%;height:auto;"></center>
+			
+		<br><br>
+		
+		<p> Alfredo dos Santos Rollo é um dublador, psicólogo e psicodramatista de São Paulo. Alfredo é muito conhecido por dublar diversas séries e filmes, como : </p>
+		
+		<br>
+		
+			<ul>
+				<li>- Zachary Levi - (Alvin e os Esquilos 2);</li><br>
+				<li>- Jonny Rico - (Tropas Estelares: a série);</li><br>
+				<li>- Aoshi - (episódio 89 de Samurai X);</li><br>
+				<li>- Brock - (Pokémon);</li><br>
+				<li>- Lucifer Morningstar - (Lucifer);</li><br>
+				<li>- Chris Ostreicher - (American Pie);</li><br>
+				<li>- Kaiser - (Naruto);</li><br>
+				<li>- Blacke - (A Volta do Incrível Hulk);</li><br>
+				<li>- Dr. Wilson - (Dr. House).</li>
+			</ul>
+			
+		<br>
+		
+		<center><h3> Siga Alfredo Rollo </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/vegeta_vegano/"><img src="instagram.png" width="40" height="40"></a></center>
+
+		<br><br>
+	
+		<hr color="black">
+	
+		<br><br>
+		
+		<center><h3> Se gostaram do site não esqueçam de me seguir no Instagram. Obrigado a todos </h3></center>
+		
+		<br>
+		
+		<center><a href="https://www.instagram.com/adriangbenetti/?hl=pt-br"><img src="instagram.png" width="40" height="40"></a></center>
+	
+		<br><br><br>
+	
+		<hr color="black">
+	
+		<center><p class="rodape"> Criador do site: Adrian Gabriel Benetti - Todos os direitos reservados </p></center>
+
+  </body>
+</html>
